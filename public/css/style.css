@@ -477,6 +477,8 @@ a:visited {
   width: 40px;
   height: 40px;
   margin-right: 8px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 #sub-nav #profile-nav .fa {
   line-height: 40px;

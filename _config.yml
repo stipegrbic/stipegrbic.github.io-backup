@@ -79,9 +79,8 @@ disqus_shortname: stipegrbic
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: git@heroku.com:stipegrbic.git
-  branch: master
+  type: heroku
+  repo: git@heroku.com:stipegrbic.git
   
 admin:
   username: stipegrbic
