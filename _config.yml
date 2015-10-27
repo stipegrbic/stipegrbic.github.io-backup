@@ -81,8 +81,3 @@ disqus_shortname: stipegrbic
 deploy:
   type: heroku
   repo: git@heroku.com:stipegrbic.git
-  
-admin:
-  username: stipegrbic
-  password_hash: d4b2e1f28fbd72376b7ad509cc2a20c9
-  secret: a secret something
