@@ -4,7 +4,8 @@ tags:
 - node.js
 ---
 Recently I got a requirement to create a proof of concept web application. Something not too complicated, two types of users can register, login and after that enter and view some data with file upload/download functionality. There was also a requirement for an admin page which can view and approve registered users. I had my hands free on choosing the technology and tools to build it. Oh, and did I mention the deadline was in four days?
-<!-- more -->
+<!--more-->
+
 ### Possible solutions
 
 Since I had experience in Java web development and .NET client development and I like to say I'm technology agnostic, I was open for anything that would best suit the need. After some examination, I ended up with three options: Java, ASP.NET and Node.js. I always wanted to try Node, but didn't think this was the right moment when I had less than four days to complete the project. And while I personally like the C# language the most, I didn't work with ASP.NET. But the reason to dismiss it wasn't that, but the fact I wasn't able to create a free trial account on Azure, even if I gave my credit card number. Platforms like Heroku usually don't support ASP.NET and I wasn't ready to pay for hosting of an app that was only an MVP.

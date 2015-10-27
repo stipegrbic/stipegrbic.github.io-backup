@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: node.js | Stipe Grbić</title>
+  <title>Working with manipulation events on Windows Phone | Stipe Grbić</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Personal website">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Stipe Grbić">
-<meta property="og:url" content="http://stipegrbic.herokuapp.com/tags/node-js/index.html">
+  <meta name="description" content="Recently I worked on a Windows Phone app that had to allow users to move objects on the screen. More precisely, users would need to drag images on either left or right side. So, I just went by putting">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Working with manipulation events on Windows Phone">
+<meta property="og:url" content="http://stipegrbic.herokuapp.com/working-with-manipulation-events-on-windows-phone/index.html">
 <meta property="og:site_name" content="Stipe Grbić">
-<meta property="og:description" content="Personal website">
+<meta property="og:description" content="Recently I worked on a Windows Phone app that had to allow users to move objects on the screen. More precisely, users would need to drag images on either left or right side. So, I just went by putting">
+<meta property="og:updated_time" content="2015-10-27T19:22:41.011Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Stipe Grbić">
-<meta name="twitter:description" content="Personal website">
+<meta name="twitter:title" content="Working with manipulation events on Windows Phone">
+<meta name="twitter:description" content="Recently I worked on a Windows Phone app that had to allow users to move objects on the screen. More precisely, users would need to drag images on either left or right side. So, I just went by putting">
   
   
     <link rel="icon" href="favicon.png">
@@ -105,41 +106,85 @@
 </aside>
 
       
-      <section id="main">
-    <section class="archives-wrap">
-    <div class="archive-tag-wrap">
-      <span class="archive-tag">#node.js</span>
-    </div>
-    <div class="archives">
+      <section id="main"><article id="post-working-with-manipulation-events-on-windows-phone" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
     
-    <header class="archive-article-header">
-      
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/my-first-node-js-experience/">My first Node.js experience</a>
+    <h1 class="article-title" itemprop="name">
+      Working with manipulation events on Windows Phone
     </h1>
   
 
-      
-        
-  <div class="archive-article-date">
+        <div class="article-meta">
+          
+  <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/my-first-node-js-experience/">
-      <time datetime="2015-10-26T19:20:25.000Z" itemprop="datePublished">2015 Oct 26</time>
+    <a href="/working-with-manipulation-events-on-windows-phone/">
+      <time datetime="2014-10-22T18:10:37.000Z" itemprop="datePublished">2014-10-22</time>
     </a>
   </div>
 
 
-      
-    </header>
-  </div>
-</article>
+          
+        </div>
+      </header>
     
-    </div></section>
-    </section>
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>Recently I worked on a Windows Phone app that had to allow users to move objects on the screen. More precisely, users would need to drag images on either left or right side. So, I just went by putting Image into a Border with CompositeTransform and then listened to Manipulation events. The thing I noticed is that it just isn’t really smooth, had a lag and I didn’t want users to have that experience.<br><a id="more"></a></p>
+<p>Then I tried another method, using the Touch.FrameReported event as I read it is a lower level API and should work smoother. The results were better, but still not perfect, and I knew there had to be a better way to do it as I saw other apps which had it done right. After looking into a source code of a few samples I found, I came across the <a href="https://phone.codeplex.com/SourceControl/latest" target="_blank" rel="external">WPToolkit</a> source code and samples. Then looking into a GestureSample I found a comment inside .xaml file: “Unlike in the WP7 toolkit sample, these event handlers need to be on the containing grid, rather than on the element itself, because calculations for these events are done within the coordinate space of the element, rather than screen coordinate space, which will create incorrect values compared to the user’s expectations when the element has been scaled or rotated”. So there it is, because of a change between WP7 and WP8 and moving from GestureListener in WP7 Toolkit to built-in gesture events in WP8, this had to be implemented a little bit different. After applying changes to my code the results were just perfect. Perfectly smooth dragging of images, just as you would expect on Windows Phone.</p>
+<p>I’m not sure if this change is documented anywhere in the official documentation, but sometimes it’s not bad to look directly into source code and see how it works.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://stipegrbic.herokuapp.com/working-with-manipulation-events-on-windows-phone/" data-id="cig9roasc0005gwkufu05qabm" class="article-share-link">Share</a>
+      
+        <a href="http://stipegrbic.herokuapp.com/working-with-manipulation-events-on-windows-phone/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows-phone/">windows phone</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/my-first-node-js-experience/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          My first Node.js experience
+        
+      </div>
+    </a>
+  
+  
+    <a href="/sending-push-notifications-with-google-app-engine/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Sending push notifications with Google App Engine</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
       
         <aside id="sidebar">
   
@@ -210,7 +255,7 @@
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
