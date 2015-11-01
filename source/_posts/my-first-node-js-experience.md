@@ -3,7 +3,7 @@ date: 2015-10-26 20:20:25
 tags: 
 - node.js
 ---
-Recently I got a requirement to create a proof of concept web application. Something not too complicated, two types of users can register, login and after that enter and view some data with file upload/download functionality. There was also a requirement for an admin page which can view and approve registered users. I had my hands free on choosing the technology and tools to build it. Oh, and did I mention the deadline was in four days?
+Recently I got a requirement to create a proof of concept web application. Something not too complicated, two types of users can register, login and after that enter and view some data with file upload/download functionality. There was also a requirement for an admin page which can view and approve registered users. I had my hands free to choose the technology and tools to build it. Oh, and did I mention the deadline was in four days?
 <!--more-->
 
 ### Possible solutions

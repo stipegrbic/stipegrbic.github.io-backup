@@ -904,10 +904,21 @@ a.article-title:hover {
   padding: 10px 0;
 }
 .article-entry blockquote {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.4em;
-  margin: 1.6em 20px;
-  text-align: center;
+  padding: 1.6em 2em;
+  border-left: 5px solid #ccc;
+  background: #eee;
+  position: relative;
+}
+.article-entry blockquote p {
+  margin: 0;
+}
+.article-entry blockquote :before {
+  left: 10px;
+  content: '\201C';
+  color: #ccc;
+  font-size: 40px;
+  font-family: Arial;
+  position: absolute;
 }
 .article-entry blockquote footer {
   font-size: 14px;
