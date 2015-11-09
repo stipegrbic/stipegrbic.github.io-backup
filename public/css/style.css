@@ -910,6 +910,7 @@ a.article-title:hover {
 }
 .article-entry blockquote p {
   margin: 0;
+  font-style: italic;
 }
 .article-entry blockquote :before {
   left: 10px;
