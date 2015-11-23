@@ -16,4 +16,4 @@ I **know** there was at least one such confusion when Windows Phone 7 came aroun
 
 ### Not only Windows
 
-Unfortunately, this kind of "*I don't care, get it done*" attitude is not limited to Windows apps development. When you are dealing with some business, you should make sure you understand the basic terminology, there are simply no excuses. Especiallly when you want to do a project and make some money from it.
+Unfortunately, this kind of "*I don't care, get it done*" attitude is not limited to Windows apps development. When you are dealing with some business, you should make sure you understand at least the basic terminology, there are simply no excuses. Especially when you want to do a project and make some money from it.
