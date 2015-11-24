@@ -3,7 +3,7 @@ date: 2015-11-23 20:58:56
 tags:
 - project management
 ---
-What's the deal with Windows apps terminology? I know it got messed up and easy to confuse, especially when you are not inside the Windows world, and platform resets done by Microsoft in the last few years certainly didn't help. But there are quite a lot people who **should** understand it and they don't. They just don't want to invest that little time needed to understand what they are working with, and that's a reason for this post.
+What's the deal with Windows apps terminology? I know it got messed up and easy to confuse, especially when you are not inside the Windows world, and platform resets done by Microsoft in the last few years certainly didn't help. But there are quite a lot people who **should** understand it and they don't. They just don't want to invest that little time needed to understand what they are working with, and that's the reason for this post.
 <!--more-->
 
 ### The state of Windows apps
@@ -16,4 +16,4 @@ I **know** there was at least one such confusion when Windows Phone 7 came aroun
 
 ### Not only Windows
 
-Unfortunately, this kind of "*I don't care, get it done*" attitude is not limited to Windows apps development. When you are dealing with some business, you should make sure you understand at least the basic terminology, there are simply no excuses. Especially when you want to do a project and make some money from it.
+Unfortunately, this kind of "*I don't care, get it done*" attitude is not limited to Windows apps development, or software development at all. When you are dealing with some business, you should make sure you understand at least the basic terminology, there are simply no excuses. Especially when you want to do a project and make some money from it.
