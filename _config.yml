@@ -72,6 +72,11 @@ theme: icarus
 # Disqus
 disqus_shortname: stipegrbic
 
+feed:
+  tyoe: atom
+  path: atom.xml
+  limit: 20
+
 # DuoShuo
 # duoshuo_shortname: hexo-theme-icarus
 

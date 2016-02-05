@@ -6,7 +6,6 @@ Here I'll list some of my projects I did in my free time. The work I do on my da
 - [Bookmark Tiles](http://www.windowsphone.com/en-us/store/app/bookmarks-tiles/b3899282-0e51-499e-b0d7-249ed7969b85) – An application which will make your IE bookmarks on start screen look beautiful with custom icon, title and URL. Created just because I didn't like that my bookmark for Google was a plain white tile.
 
 - [RemindMe ToDo](http://www.windowsphone.com/en-us/store/app/remindme-todo/fca8b7de-3beb-47a4-bc23-4b8aa96a8f48) – Plain simple to do application. What makes it stand out from other similar applications is its simplicity, but also possibility to categorize tasks in lists and pin each list or task to start screen.
-<a href="https://www.microsoft.com/store/apps/9nblggh07s2x?ocid=badge"><img src="https://assets.windowsphone.com/8d997df3-5b6e-496c-88b3-e3f40117c8fd/English-get-it-from-MS_InvariantCulture_Default.png" srcset="https://assets.windowsphone.com/0100c7e5-1455-40bc-a351-b77d2801ad5a/English_get-it-from-MS_InvariantCulture_Default.png 2x"  alt="Get it from Microsoft" /></a>
 
 - [Where You At](http://www.windowsphone.com/en-us/store/app/where-you-at/e1717a56-30d8-4ed0-89ff-81a1717bf2b1) – Remember Google Latitude? This is similar application which enables you to know location of people you follow. You can also let other people know where you currently are, but of course you can do that only when you want and only with people you want.
 
