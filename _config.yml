@@ -77,6 +77,9 @@ feed:
   path: atom.xml
   limit: 20
 
+plugins:
+- hexo-generator-cname
+
 # DuoShuo
 # duoshuo_shortname: hexo-theme-icarus
 
