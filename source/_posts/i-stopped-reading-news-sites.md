@@ -3,14 +3,6 @@ date: 2017-01-10 16:22:07
 tags:
 - personal
 ---
-
-
-
-title: I read a book
-date: 2017-01-05 17:23:07
-tags:
-- personal
----
 Yes, it's good to be informed and know what happens in the world around you. Yes, website news are the fastest, the most easily consumed and allow its audience to have conversation on the subject. But the news sites are broken and I can't read them anymore.
 <!--more-->
 
