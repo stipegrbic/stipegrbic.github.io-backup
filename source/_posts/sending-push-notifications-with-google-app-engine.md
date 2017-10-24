@@ -3,6 +3,7 @@ date: 2014-05-01 20:17:48
 tags:
 - windows phone
 - google app engine
+- backend
 ---
 When I built a Windows Phone application for local weather forecast it was naturally to implement push notifications – because you know how hard it is for users to manually check if new weather information is available. So, the question was how to do it – simple, fast and for free?
 <!--more-->
