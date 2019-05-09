@@ -2,6 +2,7 @@ title: An Excel interop trick
 date: 2019-05-09 12:10:04
 tags:
 - software development
+- windows
 ---
 Yesterday I had a nice little evening spent with a silent failure of my program. The program needed to create an Excel document, save it and export as a PDF. It should also run periodically and automatically, so as a scheduled task right? Yes, and it works fine for me on my Windows 10 PC, but on clients Windows Server 2012? Not really.
 <!--more-->
