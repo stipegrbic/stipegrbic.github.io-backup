@@ -3,6 +3,7 @@ logo: '' # Empty this to unset logo
 
 # Header
 menu:
+  About me: about-me
   My work: my-work
   Tags: tags
 

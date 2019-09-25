@@ -3,6 +3,8 @@ date: 2015-10-27 20:26:49
 ---
 Here I'll list some of my projects I did in my free time. The work I do on my day job you can find elsewhere :)
 
+- [Event Timing](https://www.microsoft.com/en-us/p/event-timing/9nk7fcvtrvqq) - An application I created to easily see how much time passed since or how much time to some event. I was interested in various time units for this period so I can easily see the interval in seconds, minutes, hours, days or weeks as a unit of time. I also added support for toast notification which can be useful to notify you prior to some important event like anniversary (guess where I got the idea from :)) Not that I forget about it, but I was genuinely interested in how much time we were together in different time units.
+
 - [Bookmark Tiles](http://www.windowsphone.com/en-us/store/app/bookmarks-tiles/b3899282-0e51-499e-b0d7-249ed7969b85) – An application which will make your IE bookmarks on start screen look beautiful with custom icon, title and URL. Created just because I didn't like that my bookmark for Google was a plain white tile.
 
 - [RemindMe ToDo](http://www.windowsphone.com/en-us/store/app/remindme-todo/fca8b7de-3beb-47a4-bc23-4b8aa96a8f48) – Plain simple to do application. What makes it stand out from other similar applications is its simplicity, but also possibility to categorize tasks in lists and pin each list or task to start screen.
