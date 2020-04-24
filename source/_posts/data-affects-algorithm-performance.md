@@ -3,7 +3,7 @@ date: 2019-09-25 13:37:59
 tags:
 - software development
 ---
-The title is so obvious that you're probably wondering why I had to write a blog post about it. I'm also surprised how obvious truts must be repeated in order to comply with them. I'll explain what inspired me.
+The title is so obvious that you're probably wondering why I had to write a blog post about it. I'm also surprised how obvious truths must be repeated in order to comply with them. I'll explain what inspired me.
 <!--more-->
 
 ### Optimize
