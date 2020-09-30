@@ -11,3 +11,6 @@ The most important motivation for this application was to quickly calculate how 
 Known limitations:
 - It doesn't support different time zones. It always calculates based on UTC time.
 - Date format is not based on user's region. Date format in the input field is formatted by users browser. The date in calculated page is formated in dd/MM/yyyy format as I think most of the people use that format.
+
+\[UPDATE\]
+The application is no longer available as I didn't want to start an Azure subscription. I'm sorry to end it like this, but the application was never meant to be maintained, or improved. It served its purpose of getting me learn a bit about the technology.
