@@ -14,3 +14,6 @@ Known limitations:
 
 \[UPDATE\]
 The application is no longer available as I didn't want to start an Azure subscription. I'm sorry to end it like this, but the application was never meant to be maintained, or improved. It served its purpose of getting me learn a bit about the technology.
+
+\[UPDATE 2\]
+Application is live again. I decided to start an Azure subscription and avoid unnecessary costs. The app is available [here](https://daysfromtoday.azurewebsites.net)
