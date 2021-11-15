@@ -9,7 +9,7 @@ menu:
 
 # Content
 excerpt_link: Read More
-fancybox: true
+fancybox: false
 
 # Profile
 profile: true # whether to show profile bar
