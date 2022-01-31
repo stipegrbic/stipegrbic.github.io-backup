@@ -21,7 +21,7 @@ Let me write a few thing about the technology on the App Engine. While in essenc
 
 ### Now what
 Fast forward to one month ago and I got a requirement to implement one new API on the server. I knew something was happening with Google App Engine as the dashboard didn't look as before, some menu items were crossed over and there were notes to switch to the new dashboard. I understood there were quite a few changes and it was rebranded to Google Cloud Platform. Ok, I wasn't really interested in all the changes, I just wanted to implement the new functionality. So I tried to deploy the new version, but it simply didn't work, the tutorials written a few years ago don't work today and there are no migration guides for use old users. That did it and I decided to move away from the whole thing and implement it all from scratch and deploy it somewhere I'll have more control. 
-![Google App Engine dashboard leftovers](../images/GAE.png)
+![Google App Engine dashboard leftovers](/assets/img/GAE.png)
 
 ### Node.js again
 As I played with Node.js recently the decision was simple. For a service that served quite a few requests, with no internal processing needs and one which I could implement rather fast, Node.js looked like natural choice. And it was, I built a service in a few days of my free time development. I decided to deploy it on OpenShift as it provided a simple and easy to understand pricing and deployment documentation. I admit there were a few issues when something didn't work in production due to incompatible node modules, but I managed to fix them and learned about importance of versioning.
