@@ -1,11 +1,20 @@
 #  The contact options.
 
+
+-
+  type: twitter
+  icon: 'fab fa-twitter'
+-
+  type: linkedin
+  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.linkedin.com/in/stipe-grbić-45045a83'                 # Fill with your Linkedin homepage
 -
   type: github
   icon: 'fab fa-github'
 -
-  type: twitter
-  icon: 'fab fa-twitter'
+  type: stack-overflow
+  icon: 'fab fa-stack-overflow'
+  url:  'https://stackoverflow.com/users/3261232/stipe'                  # Fill with your stackoverflow homepage
 -
   type: email
   icon: 'fas fa-envelope'
@@ -19,11 +28,5 @@
 #   type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your mastodon account page
--
-  type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/stipe-grbić-45045a83'                 # Fill with your Linkedin homepage
--
-  type: stack-overflow
-  icon: 'fab fa-stack-overflow'
-  url:  'https://stackoverflow.com/users/3261232/stipe'                  # Fill with your stackoverflow homepage
+
+
