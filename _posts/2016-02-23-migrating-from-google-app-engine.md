@@ -2,9 +2,9 @@
 title: Migrating from Google App Engine
 date: 2016-02-23 16:05:31
 categories: [software development, node.js]
-tags: [node.js, google app engine, backend]
+tags: [software development, node.js, google app engine, backend]
 ---
-As you might have read in my first [blog post](/sending-push-notifications-with-google-app-engine), I built a push notifications server on Google App Engine. It was nearly three years ago and at that point it looked nice to me to build a server in Java, deploy it on Google's service and not have to pay a cent for it. Recently a few requirements arose and while I didn't want to make the effort of whole service migration, I eventually did it. Here I'll write what were the reasons for that and how I managed to do it safe and simple.
+As you might have read in my first [blog post](/posts/sending-push-notifications-with-google-app-engine), I built a push notifications server on Google App Engine. It was nearly three years ago and at that point it looked nice to me to build a server in Java, deploy it on Google's service and not have to pay a cent for it. Recently a few requirements arose and while I didn't want to make the effort of whole service migration, I eventually did it. Here I'll write what were the reasons for that and how I managed to do it safe and simple.
 <!--more-->
 
 ### In the beginning
