@@ -3,7 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-Hi, I'm Stipe Grbić. I work as an independent software development, currently with a full time engagement.
+Hi, I'm Stipe Grbić. I work as an independent software engineer, currently with a full time engagement.
 
 My main domain of expertise is Windows desktop software development. You can see my experience and education information on my LinkedIn profile, but here's a brief history of my career.
 
