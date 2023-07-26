@@ -10,14 +10,14 @@
   }
 }
 
-%btn-post-nav {
+@mixin btn-post-nav {
   width: 50%;
   position: relative;
   border-color: var(--btn-border-color);
 }
 
 @mixin dot($pl: 0.25rem, $pr: 0.25rem) {
-  content: '\2022';
+  content: "\2022";
   padding-left: $pl;
   padding-right: $pr;
 }
@@ -26,23 +26,12 @@
   color: var(--text-color);
 }
 
-.preview-img {
-  overflow: hidden;
-  aspect-ratio: 40 / 21;
+img.preview-img {
+  margin: 0;
+  border-radius: 6px;
 
-  @extend %rounded;
-
-  &:not(.no-bg) {
-    img.lazyloaded {
-      background: var(--img-bg);
-    }
-  }
-
-  img {
-    -o-object-fit: cover;
-    object-fit: cover;
-
-    @extend %rounded;
+  &.bg[data-loaded="true"] {
+    background: var(--preview-img-bg);
   }
 }
 
@@ -93,7 +82,6 @@ h1 + .post-meta {
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 
     .share-icons {
@@ -118,7 +106,7 @@ h1 + .post-meta {
         &:hover {
           text-decoration: none;
 
-          > i {
+          >i {
             @extend %btn-share-hovor;
           }
         }
@@ -155,16 +143,6 @@ h1 + .post-meta {
 
 .post-tags {
   line-height: 2rem;
-
-  .post-tag {
-    background: var(--tag-bg);
-
-    &:hover {
-      @extend %link-hover;
-      @extend %tag-hover;
-      @extend %no-bottom-border;
-    }
-  }
 }
 
 .post-navigation {
@@ -172,25 +150,27 @@ h1 + .post-meta {
   padding-bottom: 4rem;
 
   .btn {
-    @extend %btn-post-nav;
+    @include btn-post-nav;
 
-    &:not(:hover) {
-      color: var(--link-color);
-    }
+    color: var(--link-color);
 
     &:hover {
-      &:not(.disabled)::before {
-        color: whitesmoke;
-      }
+      background: #2a408e;
+      color: #ffffff;
+      border-color: #2a408e;
     }
 
     &.disabled {
-      @extend %btn-post-nav;
+      @include btn-post-nav;
 
       pointer-events: auto;
       cursor: not-allowed;
       background: none;
       color: gray;
+
+      &:hover {
+        border-color: none;
+      }
     }
 
     &.btn-outline-primary.disabled:focus {
@@ -205,12 +185,14 @@ h1 + .post-meta {
     }
 
     &:first-child {
-      border-radius: $base-radius 0 0 $base-radius;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
       left: 0.5px;
     }
 
     &:last-child {
-      border-radius: 0 $base-radius $base-radius 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
       right: 0.5px;
     }
   }
@@ -222,15 +204,6 @@ h1 + .post-meta {
     white-space: normal;
   }
 } /* .post-navigation */
-
-@media (hover: hover) {
-  .post-navigation {
-    .btn,
-    .btn::before {
-      transition: all 0.35s ease-in-out;
-    }
-  }
-}
 
 @-webkit-keyframes fade-up {
   from {
@@ -268,58 +241,24 @@ h1 + .post-meta {
   transition: top 0.2s ease-in-out;
   -webkit-animation: fade-up 0.8s;
   animation: fade-up 0.8s;
+}
 
-  ul {
-    list-style: none;
-    font-size: 0.85rem;
-    line-height: 1.25;
-    padding-left: 0;
+#toc {
+  ul.nav.navbar-nav {
+    margin: 0.5rem 0;
+    padding: 0;
 
     li {
-      &:not(:last-child) {
-        margin: 0.4rem 0;
-      }
-
-      a {
-        padding: 0.2rem 0 0.2rem 1.25rem;
-      }
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
+  }
+}
 
-    /* Overwrite TOC plugin style */
-
-    .toc-link {
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-
-      &:hover {
-        color: var(--toc-highlight);
-        text-decoration: none;
-      }
-
-      &::before {
-        display: none;
-      }
-    }
-
-    .is-active-link {
-      color: var(--toc-highlight) !important;
-      font-weight: 600;
-
-      &::before {
-        display: inline-block;
-        width: 1px;
-        left: -1px;
-        height: 1.25rem;
-        background-color: var(--toc-highlight) !important;
-      }
-    }
-
-    ul {
-      a {
-        padding-left: 2rem;
-      }
+nav[data-toggle="toc"] {
+  .nav {
+    .nav > li > a.active {
+      font-weight: 600 !important;
     }
   }
 }
@@ -347,10 +286,24 @@ h1 + .post-meta {
     -webkit-box-orient: vertical;
   }
 
+  a:hover {
+    text-decoration: none;
+  }
+
   .card {
-    h4 {
+    border-color: var(--card-border-color);
+    background-color: var(--card-bg);
+    box-shadow: 0 0 5px 0 var(--card-box-shadow);
+    transition: all 0.3s ease-in-out;
+
+    h3 {
       @extend %text-color;
-      @extend %text-clip;
+    }
+
+    &:hover {
+      -webkit-transform: translate3d(0, -3px, 0);
+      transform: translate3d(0, -3px, 0);
+      box-shadow: 0 10px 15px -4px rgba(0, 0, 0, 0.15);
     }
   }
 }
@@ -362,8 +315,7 @@ h1 + .post-meta {
     margin-bottom: 2rem;
   }
 
-  /* stylelint-disable-next-line selector-id-pattern */
-  #disqus_thread {
+  #disqus_thread { /* stylelint-disable-line selector-id-pattern */
     min-height: 8.5rem;
   }
 }
@@ -376,7 +328,7 @@ h1 + .post-meta {
   @include label(inherit, 400, inherit);
 
   &::after {
-    content: ':';
+    content: ":";
   }
 }
 
